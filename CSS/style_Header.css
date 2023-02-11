@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header_height:46px;
+}
+
+html{
+    font-size: 14px;
+    width: 100%;
+}
+
+body{
+    
+}
+#header{
+    background-color: white;
+    width: 100%;
+    height: 46px;
+
+}
+
+#header .nav{
+    position: relative;
+    left: 46px;
+    
+}
+
+#header .nav li{
+    display: inline-block;
+    color: black;
+    margin-left: -4px;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    white-space: -4px;
+}
+#header .nav li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#header .nav i{
+    display: block;
+    line-height: 23px;
+    text-align: center;
+}
+
+#content{
+    
+    width: 100%;
+    
+    background-color: #ccc;
+
+}
+
+#content .news{
+    min-width: calc(100% - 84px);
+    overflow: hidden;
+    background-color: #ccc;
+    margin-left: 50%;
+    position: relative;
+    top: 24px;
+    transform: translateX(-50%);
+}
+
+#content .news .news_sale,
+#content .news .news_mess{
+    
+}
+
+#content .news .news_sale{
+    
+    display: inline-block;
+    width: calc(100%/2 + 10%);
+    float: left;
+}
+
+#content .news_sale .img_Sale{
+    min-width: 100%;
+    min-width: 100%;
+}
+
+#content .news_sale .img_Sale:hover{
+    opacity:0.5;
+    filter: drop-shadow(2px 2px 10px black);
+}
+
+#content .news .news_mess{
+    display: block;
+    height: 100%;
+    width: calc(100%/2 - 10% - 12px);
+    float: right;
+    
+    background-color: white;
+}
+
+#content .news_mess .news_title{
+    background-color: red;
+    width: 100%;
+    height: 32px;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-weight:600;
+    color: white;
+    padding-left: 24px;
+}
+
+#content .mess_1,
+#content .mess_2,
+#content .mess_3{
+    margin-top: 24px;
+    width: 100%;
+    max-height: calc(400px / 3) ;
+}
+
+#content .mess_1:hover,
+#content .mess_2:hover,
+#content .mess_3:hover{
+    filter: opacity(0.5)
+}
+
+#content .mess_1 img,
+#content .mess_2 img,
+#content .mess_3 img{
+    margin-left: 12px;
+    max-width: 38%;
+    min-width: 38%;
+}
+
+
+
+#content .mess_1 .mess_overview,
+#content .mess_2 .mess_overview,
+#content .mess_3 .mess_overview {
+    min-width: calc(60% - 32px);
+    max-width: calc(60% - 32px);
+    float: right;
+    margin-right: 24px;
+    text-align: justify;
+    
+}
+
+#content .mess_3 {
+    margin-bottom: 32px;
+}
+
+#content{
+  clear: both;  
+}
+#product{
+    margin-top: 48px;
+    min-width: calc(100% - 84px);
+    overflow: auto;
+    background-color:#ccc;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    clear: both;
+}
+
+#product .product_Nav{
+    width: 100%;
+    height: 32px;
+    background-color: cornflowerblue;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 32px;
+    padding-left: 32px;
+    font-weight: 500;
+    
+}
+
+
+
+#product .list_Product{
+    clear: both;
+    overflow: auto;
+}
+
+#product .list_Product .info_Product{
+    min-height: 200px;
+    max-width: calc(100% / 5 );
+    float: left;
+    padding: 0 8px;
+    background-color: #ccc;
+    
+}
+
+#product .list_Product .img_Product{
+    width: 100%;
+}
+
+#product .info_Product .price{
+    color: red;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    margin-top: -4px;
+                              
+}
+
+.product_Cammera{
+    clear: both;
+    margin-top: 24px;
+}
+.product_LinhKien{
+    clear: both;
+    margin: 24px 0px;
+    
+}
+
+#footer{
+    position: absolute;
+    width: 100%;  
+    background-color: #ccc;
+    min-height: 200px;
+}
+
+#footer .footer_Container{
+    width: calc(100% - 84px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+#footer .title{
+    position: relative;
+    top: 12px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#footer .footer_info{
+    margin-top: 24px;
+    padding-left: 50%;
+
+}
+
+#footer .info_Member{
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: white;
+    margin-bottom: 24px;
+}
+
