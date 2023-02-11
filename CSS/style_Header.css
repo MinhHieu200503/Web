@@ -185,6 +185,8 @@ body{
     overflow: auto;
 }
 
+
+
 #product .list_Product .info_Product{
     min-height: 200px;
     max-width: calc(100% / 5 );
@@ -196,6 +198,15 @@ body{
 
 #product .list_Product .img_Product{
     width: 100%;
+}
+
+#product .list_Product .product_name{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: -4px;
+    padding: 0px 16px;
 }
 
 #product .info_Product .price{
