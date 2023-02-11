@@ -10,7 +10,6 @@
 
 html{
     font-size: 14px;
-    width: 100%;
 }
 
 body{
@@ -24,8 +23,8 @@ body{
 }
 
 #header .nav{
-    position: relative;
-    left: 46px;
+    position: absolute;
+    left: 24px;
     
 }
 
