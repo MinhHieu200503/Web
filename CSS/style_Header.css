@@ -271,6 +271,10 @@ body{
     font-size: 18px;
 }
 
+#footer .footer_Container .footer_Local{
+    display: inline;
+}
+
 #footer .footer_Container .contact_Icon{
     font-size: 24px;
     padding-right: 24px;
@@ -301,6 +305,10 @@ body{
 #footer .footer_contact .phone_Title{
     color:black ;
     font-size: 16px;
+}
+
+#footer .footer_Container .footer_BCT{
+    width: 300px;
 }
 
 #footer .info_Member{
