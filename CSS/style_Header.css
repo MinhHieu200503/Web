@@ -32,6 +32,8 @@ body{
     height: var(--header_height);
 }
 
+
+
 #header .find_Header{
     width: 20%;
     float: right;
@@ -41,6 +43,7 @@ body{
     top: 7px;
     right: 100px;
     border-radius: 5px;
+    font-weight: 500;
 }
 
 #header  .search_Icon{
@@ -51,6 +54,8 @@ body{
     font-size: 20px;
     
 }
+
+
 
 #header .nav{
     position: absolute;
@@ -170,11 +175,15 @@ body{
 #content .mess_2 .mess_overview,
 #content .mess_3 .mess_overview {
     min-width: calc(60% - 32px);
-    max-width: calc(60% - 32px);
+    max-width: calc(60% - 32px);  
     float: right;
     margin-right: 24px;
     text-align: justify;
-    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 5;
+    height: calc(5 * 20px);
 }
 
 #content .mess_3 {
@@ -245,6 +254,10 @@ body{
     background-color: #fff;
     margin-top: -4px;
     padding: 0px 16px;
+    min-height: 65px;
+    overflow: hidden;
+    max-height: 65px;
+    text-overflow: ellipsis;
 }
 
 #product .info_Product .price{
