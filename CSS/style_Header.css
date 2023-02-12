@@ -9,6 +9,10 @@
     --divide_header:calc(var(--header_height) / 2);
 }
 
+.clean_Float{
+    clear: both;
+}
+
 html{
     font-size: 14px;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -22,6 +26,30 @@ body{
     width: 100%;
     height: var(--header_height);
 
+}
+
+#header .nav_Search{
+    height: var(--header_height);
+}
+
+#header .find_Header{
+    width: 20%;
+    float: right;
+    padding: 4px;
+    margin-top: auto;
+    position: relative;
+    top: 7px;
+    right: 100px;
+    border-radius: 5px;
+}
+
+#header  .search_Icon{
+    float: right;
+    position: absolute;
+    right: 70px;
+    line-height: var(--header_height);
+    font-size: 20px;
+    
 }
 
 #header .nav{
@@ -309,6 +337,7 @@ body{
 
 #footer .footer_Container .footer_BCT{
     width: 300px;
+    margin-top: 12px;
 }
 
 #footer .info_Member{
