@@ -132,7 +132,7 @@ body{
     width: calc(100%/2 - 10% - 12px);
     float: right;
     background-color: white;
-    min-height: 600px;
+    /* min-height: 600px; */
 }
 
 #content .news_mess .news_title{
