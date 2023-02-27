@@ -13,6 +13,10 @@
     clear: both;
 }
 
+a{
+    text-decoration: none;
+}
+
 html{
     font-size: 14px;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -73,11 +77,21 @@ body{
     text-transform: uppercase;
     padding: 0px 12px;
     white-space: -4px;
+
 }
-#header .nav li:hover{
+
+#header .nav li a{
+    text-decoration: none;
+    color: black;
+}
+#header .nav li:hover {
     background-color: black;
-    color: white;
+
     cursor: pointer;
+}
+
+#header .nav li:hover a {
+    color: white;
 }
 
 #header .nav i{
@@ -112,13 +126,15 @@ body{
 #content .news .news_sale{
     
     display: inline-block;
-    width: calc(100%/2 + 10%);
+    width: 850px;
     float: left;
 }
 
 #content .news_sale .img_Sale{
     min-width: 100%;
     min-width: 100%;
+    border-radius: 10px;
+
 }
 
 #content .news_sale .img_Sale:hover{
@@ -128,10 +144,12 @@ body{
 
 #content .news .news_mess{
     display: block;
-    height: 100%;
+    height: 530.71px;
     width: calc(100%/2 - 10% - 12px);
+    min-width: 560px;
     float: right;
     background-color: white;
+    border-radius: 25px 25px 15px 15px;
     /* min-height: 600px; */
 }
 
@@ -143,7 +161,7 @@ body{
     height: 32px;
     text-transform: uppercase;
     line-height: 28px;
-    
+    border-radius: 25px 0px;
     color: white;
     padding-left: 24px;
 }
@@ -168,6 +186,7 @@ body{
     margin-left: 12px;
     max-width: 38%;
     min-width: 38%;
+    border-radius: 5px;
 }
 
 
@@ -205,6 +224,7 @@ body{
 }
 
 #product .product_Nav{
+    border-radius: 0px 25px;
     width: 100%;
     height: 32px;
     background-color: cornflowerblue;
@@ -223,6 +243,7 @@ body{
     overflow: auto;
     margin-left: -8px;
     margin-right: -8px;
+    padding-top: 12px;
 }
 
 
@@ -230,6 +251,7 @@ body{
 #product .list_Product .info_Product{
     min-height: 200px;
     max-width: calc(100% / 5 );
+    min-width: 187px;
     float: left;
     padding: 0 8px;
     background-color: #ccc;
@@ -245,7 +267,9 @@ body{
 
 
 #product .list_Product .img_Product{
+    border-radius: 15px 15px 0 0;
     width: 100%;
+    
 }
 
 #product .list_Product .product_name{
@@ -268,7 +292,9 @@ body{
     background-color: #fff;
     margin-top: -4px;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    border-radius: 0 0 15px 15px;
     font-weight: 700;
+
                               
 }
 
