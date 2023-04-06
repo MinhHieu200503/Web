@@ -1,0 +1,252 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: var(--header_height);
+}
+header img{
+    height: var(--header_height);
+    width: 200px;
+    position: absolute;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+header .header_First,
+header .nav_Search{
+    height: calc(var(--header_height) / 2);
+}
+
+header .log_In{
+    position: absolute;
+    top: 4px;
+    right: 39px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header .log_In .title{
+    display: inline-block;
+    padding-right: 8px;
+    color: black;
+}
+
+header .log_In:active a,
+header .log_In:active i{
+    color: #ccc;
+}
+
+header .log_In .LogIn_Icon{
+    font-size: 21px;
+} 
+
+header  .shopping_Cart{
+    position: absolute;
+    top: 58px;
+    right: 36px;
+    font-size: 28px;
+    -webkit-transform: scaleX(-1); 
+}
+
+header .shopping_title{
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    font-size: 18px;
+}
+
+header  .shopping{
+    color: black;
+}
+
+header  .shopping:hover{
+    color: #ccc;
+}
+
+header  .shopping:hover .count_product{
+    opacity: 0.6;
+}
+
+header  .count_product{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius:50% ;
+    top: 50px;
+    right: 16px;
+    text-align: center;
+    
+}
+
+header .search--container{
+    justify-content: center;
+    display: flex;
+}
+
+header .find_Header{
+    margin-top: 5px;
+    width: 30%;
+    padding:5px;
+    /* top: 8px; */
+    right: 611px;
+    border-radius: 15px 0 0 15px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 12px;
+}
+
+header  .search_Icon .Icon_Search_Into{
+    padding: 4px 6px;
+    
+}
+
+header .search_Icon{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 42px;
+    height: 31px;
+    background-color: #ccc;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid;
+    display: inline-block;
+}
+
+header  .search_Icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+
+header .nav{
+    width: 100%;
+    text-align: center;
+    
+}
+header .nav li{
+    
+    font-weight: 700;
+    display: inline-block;
+    color: black;
+    margin-left: -4px;
+    line-height: var(--divide_header);
+    text-transform: uppercase;
+    padding: 0px 28px;
+    white-space: -4px;
+    border-radius: 5px;
+}
+
+header .nav li a{
+    text-decoration: none;
+    color: black;
+}
+header .nav li:hover {
+    background-color: black;
+
+    cursor: pointer;
+}
+
+header .nav li:hover a {
+    color: white;
+}
+
+header .nav i{
+    display: block;
+    line-height: var(--divide_header);
+    text-align: center;
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;  
+    background-color: #ccc;
+    min-height: 400px;
+}
+
+footer .footer_Container{
+    width: calc(100% - 84px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: table;
+    clear: both;
+
+    /* background-color: black; */
+}
+
+footer .footer_Container .footer_contact,
+footer .footer_Container .footer_member{
+    
+    width: 600px;
+}
+
+footer .footer_Container .footer_contact{
+    float: left;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer_Container .footer_Local{
+    display: inline;
+}
+
+footer .footer_Container .contact_Icon{
+    font-size: 24px;
+    padding-right: 24px;
+}
+
+footer .footer_Container .footer_member{
+    float: right;
+}
+
+footer .footer_contact .contact_info{
+    display: block;
+    width: 100%;
+}
+
+footer .footer_contact .phone_Title:active{
+    color: red;
+}
+footer .footer_contact .Social_Link,
+footer .footer_contact .phone_Title,
+footer .footer_contact .phone_Number,
+footer .footer_contact .footer_Social{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    
+}
+
+footer .footer_contact .phone_Title{
+    color:black ;
+    font-size: 16px;
+}
+
+footer .footer_Container .footer_BCT{
+    width: 300px;
+    margin-top: 12px;
+}
+
+footer .info_Member{
+    font-style: italic;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 24px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+

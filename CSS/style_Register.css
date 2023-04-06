@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: black;
+}
+
+.clear::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+#background{
+
+    background: no-repeat center/cover url(../IMAGE/login.jpg);
+    height: 120vh;
+}
+
+#container{
+    
+    width: 450px;
+    height: 700px;
+    border: 1px solid violet;
+    margin: auto;
+    transform: translateY(4%);
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 50px;
+    box-shadow: 0 0 20px violet;
+    
+}
+
+
+
+#container .title_LogIn{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+
+
+#container .user,
+#container .input_User,
+#container .user_password,
+#container .input_Pass
+{
+    margin: 0px 20px;
+    margin-left: 7%;
+}
+
+#container .user_password,
+#container .user{
+    margin-top: 16px;
+    padding-bottom: 8px;
+    
+}
+
+#container .user{
+    margin-top: 32px;
+}
+
+#container .input_Pass,
+#container .input_User{
+    padding: 8px 4px;
+    width: 86%;  
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom:  groove;
+    
+}
+
+#container .input_Pass:focus-visible,
+#container .input_User:focus-visible{
+    border-bottom: 2px solid;
+    outline: none;
+}
+
+#container .forget_Pass{
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+    padding-top:12px;
+}
+
+#container .forget_Pass:active{
+    color: violet;
+    opacity: 0.7;
+}
+
+
+#container .btn_logIN{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 12px;
+    margin-top: 28px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
+#container .btn_logIN:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#container .btn_logIN:active{
+    opacity: 0.9;
+    border: 3px solid;
+
+    
+}
+
+#container .other_LogIn{
+    text-align: center;
+    opacity: 0.8;
+
+}
+
+#container .other_LogIn img{
+    width: 60px;
+    padding: 0 4px;
+}
+#container .other_LogIn img:hover{
+    opacity: 0.7;
+}
+#container .other_LogIn img:active{
+    opacity: 0.9;
+}
+
+#container .title_OtherLogIn{
+    padding: 12px 0px;
+    font-style: italic;
+}
+
+#container .icon_logIn{
+    padding-bottom: 42px;
+}
+
+#container .signUp{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+#container .signUp:active{
+    color: violet;
+}
+
+#container .btn_LogIn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 4px;
+    margin-top: 12px;
+    border-radius: 30px;
+    width: 100px;
+    border: 1px solid;
+    outline: none;
+    
+}
+
+#container .btn_LogIn:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    border: 1px solid;
+}
+
+#container .btn_LogIn:active{
+    cursor: pointer;
+    opacity: 0.9;
+    border: 3px solid;
+}
+
+
+

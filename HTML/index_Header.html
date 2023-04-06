@@ -5,255 +5,394 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style_Header.css">
+    <link rel="shortcut icon" href="../IMAGE/logoStore.jpg">
     <script src="https://kit.fontawesome.com/b64565a5da.js" crossorigin="anonymous"></script>
     <title>Trang Chủ</title>
-    <script src="../JS/action_HơmPage.js"></script>
+    
 </head>
 <body>
     <!-- SECTION: HEADER -->
-    <div id="header">
-        <div class="header_First">
-            <div class="nav_Search">
-                <input class="find_Header" type="text" placeholder="Tìm kiếm " >
-                <div class="search_Icon"><i class="Icon_Search_Into fa-solid fa-magnifying-glass"></i></div>
-                <div class="clean_Float"></div>
-            </div>
-            <div class="log_In">
-                <a href="../HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
-                <i class="LogIn_Icon fa-solid fa-user"></i>
-            </div>
-                
-            
-        </div>
-        <ul class="nav">
-            
-            <li>
-                <a href="">
-                
-                    <i class="fa-solid fa-laptop"></i>
-                        laptop 
-                </a>    
-            </li>
-            <li>
-                <a href="">
-                
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                    phần mềm
-                    </a>                     
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-sharp fa-regular fa-keyboard"></i>                
-                    linh kiện
-                </a>     
-            </li>
-            
-            
-            <li>
-                <a href="">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    bảo hành
-                </a>
-            </li>
-           
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    sửa chữa
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-phone"></i>
-                    liên hệ
-                </a>
-            </li>
-            
-        </ul>
-        <a class = "shopping"href="">
-            <h3 class="shopping_title">Giỏ hàng</h3>
-            <i class="shopping_Cart fa-solid fa-cart-shopping"></i>
-            <div class="count_product">0</div>
-        </a> 
+    <div id="wrapper">
+        <div id="header">
+            <a href="../HTML/index_Header.html"><img src="../IMAGE/logo1.jpg" alt="" class="logoStore"></a>
+            <div class="header_First">
+                <div class="nav_Search">
+                    <div class="search--container">
+                        <input class="find_Header" type="text" placeholder="Tìm kiếm " >
+                        <div class="search_Icon"><i class="Icon_Search_Into fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+        
+                </div>
+                <div class="log_In">
+                    <a href="../HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
+                    <i class="LogIn_Icon fa-solid fa-user"></i>
+                </div>
         
         
-    </div>
-    <!-- SECTION: CONTENT -->
-    <div id="content">
-        <!-- NEWS -->
-        <div class="news">
-            <a href="#">
-                <div class="news_sale">
-                    <img class="img_Sale" id = "Sale" src="../IMAGE/news_Sale.jpg" alt="Hinh Sale" onclick="changeBanner()">
-                </div>
-            </a>
-            <div class="news_mess">
-                <h3 class="news_title">tin tức mới nhất</h3>
-                <a href="https://www.youtube.com/">
-                    <div class="mess_1">
-                    <img src="../IMAGE/Banner/1.jpg" alt="">
-                    <p class="mess_overview">Bạn đang là sinh viên, nhân viên văn phòng? Bạn đang tìm một chiếc Laptop phù hợp với công việc và nhu cầu của mình? Ở đây là một vài chiếc Laptop cấu hình cực ổn dành cho học tập và làm việc. Cùng theo dõi nhé!</p>
-                </div>
-                </a>
-                <a href="https://www.youtube.com/">
-                    <div class="mess_2">
-                    <img src="../IMAGE/Banner/2.jpg" alt="">
-                    <p class="mess_overview"> Back To School đã tới: Mua laptop Acer, HP, Lenovo, Huawei và Dell sẽ được giảm thêm tới 700k, ưu đãi riêng dành cho sinh viên...</p>
-                </div>
-                </a>
-                <a href="https://www.youtube.com/">
-                    <div class="mess_3">
-                    <img src="../IMAGE/Banner/3.jpg" alt="">
-                    <p class="mess_overview">Top các mẫu laptop gaming ngon bổ rẻ cho sinh viên Hot nhất 2023</p>
-                </div>
-                </a>
             </div>
-        </div>
-        <!-- LIST PRODUCT -->
-        <div id="product">
-            <!-- LAPTOP -->
-            <div class="product_Laptop">
-                <h3 class="product_Nav">laptop</h3>
-                <div class="list_Product">
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\Laptop\pic1.png" alt="">
-                        <div class="price">29.990.000đ</div>
-                    </div>
-                    
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\Laptop\Pic2.png" alt="">
-                        <div class="price">38.000.000đ</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\Laptop\Pic3.png" alt="">
-                        <div class="price">32.000.000 VND</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\Laptop\Pic4.png" alt="">
-                        <div class="price">29.990.000 VND</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\Laptop\Pic5.png" alt="">
-                        <div class="price">34.500.000 VND</div>
-                    </div>
-                </div>
-            </div>
-            <!--PHẦN MỀM -->
-            <div class="product_Software">
-                <h3 class="product_Nav">Phần mềm</h3>
-                <div class="list_Product">
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\PhanMem\11.webp" alt="">
-                        <div class="product_name">Bộ định tuyến WiFi 6 ASUS RT-AX88U Chuẩn AX6000</div>
-                        <div class="price">8,190,000₫</div>
-                    </div>
-                    
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\PhanMem\22.webp" alt="">
-                        <div class="product_name">USB thu sóng WiFi 5 ASUS USB-AC53 Chuẩn AC1200</div>
-                        <div class="price">550,000₫</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\PhanMem\33.webp" alt="">
-                        <div class="product_name">Card mạng WiFi 6 Asus PCE-AX3000 chuẩn AX3000</div>
-                        <div class="price">1,190,000₫</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\PhanMem\44.webp" alt="">
-                        <div class="product_name">Phần mềm Windows 11 Home Online DwnLd NR KW9-00664</div>
-                        <div class="price">3,190,000₫</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\PhanMem\66.webp" alt="">
-                        <div class="product_name">Phần mềm Windows 10 Pro Online DwnLd NR FQC-09131</div>
-                        <div class="price">4,790,000₫</div>
-                    </div>
-                </div>
-            </div>
-            <!--LINHKIEN -->
-            <div class="product_LinhKien">
-                <h3 class="product_Nav">linh kiện</h3>
-                <div class="list_Product">
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\LinhKien\11.webp" alt="">
-                        <div class="product_name">Bàn phím Keychron K8 Pro Keycap Xanh Khung Nhôm Led RGB</div>
-                        <div class="price">2,590,000₫</div>
-                    </div>
-                    
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\LinhKien\22.webp" alt="">
-                        <div class="product_name">Bàn phím cơ FL-Esports CMK68SAM 3 Mode Wireless Metal Heart </div>
-                        <div class="price">2,899,000₫</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\LinhKien\33.webp" alt="">
-                        <div class="product_name">Chuột Razer Basilisk X HyperSpeed<br>Chuột không dây</div>
-                        <div class="price">1,090,000₫</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\LinhKien\44.webp" alt="">
-                        <div class="product_name">Tai nghe Zidli FCore FH11U RGB 7.1 Pink</div>
-                        <div class="price">410,000₫</div>
-                    </div>
-                    <div class="info_Product">
-                        <img class ="img_Product"src="..\IMAGE\LinhKien\55.webp" alt="">
-                        <div class="product_name">Phần mềm Windows 10 Pro Online DwnLd NR FQC-09131</div>
-                        <div class="price">4,790,000₫</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- SECION: FOOTER -->
-    <div id="footer">
-        <div class="footer_Container">
-            <!-- CONTACT-->
-            <div class="footer_contact">
-                <h3>Địa chỉ:</h3>
-                <i class="local_Icon fa-solid fa-location-dot"></i>
-                <p class="footer_Local">&emsp; ĐH Công Nghệ thành phố HCM (IUH) 14 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh <br></p>
-                <h3 class="contact_Title">Thông tin liên hệ</h3>
-                <a class="contact_info" href="tel:+84905927548">
-                    <i class="contact_Icon fa-solid fa-phone-volume"></i>
-                    <h3 class="phone_Title">Liên hệ mua hàng: </h3>
-                    <h3 class="phone_Number">0905927548</h3>
-                </a>
-                <a class="contact_info" href="tel:+84905927548">
-                    <i class="contact_Icon fa-solid fa-phone-volume"></i>
-                    <h3 class="phone_Title">Hỗ trợ khách hàng: </h3>
-                    <h3 class="phone_Number">0905927548</h3>
-                </a>
-                <h3 class="social_Title">Fanpage</h3>
-                <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
-                    <i class="contact_Icon fa-brands fa-facebook"></i> 
-                    <h3 class="footer_Social">Facebook: &emsp;</h3>
-                    <h4 class="Social_Link">https://www.facebook.com/</h4>
-                </a>
-                <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
-                    <i class="contact_Icon fa-brands fa-twitter"></i> 
-                    <h3 class="footer_Social">Twitter:&emsp;&emsp;&nbsp;&nbsp;</h3>
-                    <h4 class="Social_Link">https://twitter.com/</h4>
-                </a>
-                <img class="footer_BCT" src="../IMAGE/footer_BaoHanh.webp" alt="">
-            </div>
-            <!-- MEMBER -->
-            <div class="footer_member">
-                <h1 class="title">THÔNG TIN NHÓM 4</h1>
-                <div class="footer_info">
-                    <p class="info_Member">
-                        <b class="info_Title">HỌ VÀ TÊN       &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;                        MÃ SINH VIÊN <br></b>
-                        Vũ Huy Hiệu 	 &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;      19631461 <br>
-                        Lại Dương Minh Hiếu	 &emsp;&emsp;&emsp;   21044141<br>
-                        Nguyễn Quang Hậu	&emsp;&emsp;&emsp;&emsp;    21005611 <br>
-                        Nguyễn Văn Hảo	    &emsp;&emsp;&emsp;&emsp;&emsp;    21021191<br>
-                        Nguyễn Vũ Hào	     &emsp;&emsp;&emsp;&ensp;&emsp;&emsp;   21001195<br>
-                        
-                    </p>
-                </div>
-            </div>
+            <ul class="nav">
+                <!--  -->
+                <a href="../HTML/trangchulaptop.html">
+                    <li>                       
+                        <p>
+                            <i class="fa-solid fa-laptop"></i>
+                            laptop
+                        </p>
 
-            
+                    </li>
+                </a>
+                <!--  -->
+                <a href="#">
+                    <li>                       
+                        <p>
+                            <i class="fa-sharp fa-solid fa-book"></i>
+                            phần mềm
+                        </p>
+
+                    </li>
+                </a>
+                <!--  -->
+                <li class="container__Submenu">                       
+                        <p>
+                            <i class="fa-sharp fa-regular fa-keyboard"></i>
+                            linh kiện
+                        </p>
+                        <ul class="submenu">
+                            <a href="../HTML/linhKien_CPU.html"><li><p>CPU</p></li></a>
+                            <a href="../HTML/linhKien_Main.html"><li><p>MAIN</p></li></a>
+                            <a href="../HTML/linhKien_VGA.html"><li><p>VGA</p></li></a>
+                            <a href="../HTML/linhKien_RAM.html"><li><p>RAM</p></li></a>
+                            <a href="../HTML/linhKien_SSD.html"><li><p>SSD</p></li></a>
+                            <a href="#"><li><p>PHỤ KIỆN</p></li></a>          
+                        </ul>
+                </li>
+                <!--  -->
+                <a href="../HTML/Baohanh.html">
+                    <li>                       
+                        <p>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                             bảo hành
+                        </p>
+
+                    </li>
+                </a>
+                <!--  -->
+                <a href="../HTML/Suachua.html">
+                    <li>                       
+                        <p>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                             sửa chữa
+                        </p>
+
+                    </li>
+                </a>
+        
+                <a href="../HTML/Lienhe.html">
+                    <li>                       
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                             liên hệ
+                        </p>
+
+                    </li>
+                </a>
+                
+        
+            </ul>
+            <a class = "shopping"href="">
+                <h3 class="shopping_title">Giỏ hàng</h3>
+                <i class="shopping_Cart fa-solid fa-cart-shopping"></i>
+                <div class="count_product" id="cart-count">
+                    0
+                </div>
+        
+            </a>
+        </div>
+        <!-- SECTION: CONTENT -->
+        <div id="content" class="grid">
+            <!-- NEWS -->
+            <div class="news">
+                <a href="#">
+                    <div class="news_sale">
+                        <img class="img_Sale" id = "Sale" src="../IMAGE/news_Sale.jpg" alt="Hinh Sale" onclick="changeBanner()">
+                    </div>
+                </a>
+                <div class="news_mess">
+                    <h3 class="news_title">tin tức mới nhất</h3>
+                    <a href="https://www.youtube.com/">
+                        <div class="mess_1">
+                        <img src="../IMAGE/Banner/1.jpg" alt="">
+                        <p class="mess_overview">Bạn đang là sinh viên, nhân viên văn phòng? Bạn đang tìm một chiếc Laptop phù hợp với công việc và nhu cầu của mình? Ở đây là một vài chiếc Laptop cấu hình cực ổn dành cho học tập và làm việc. Cùng theo dõi nhé!</p>
+                    </div>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <div class="mess_2">
+                        <img src="../IMAGE/Banner/2.jpg" alt="">
+                        <p class="mess_overview"> Back To School đã tới: Mua laptop Acer, HP, Lenovo, Huawei và Dell sẽ được giảm thêm tới 700k, ưu đãi riêng dành cho sinh viên...</p>
+                    </div>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <div class="mess_3">
+                        <img src="../IMAGE/Banner/3.jpg" alt="">
+                        <p class="mess_overview">Top các mẫu laptop gaming ngon bổ rẻ cho sinh viên Hot nhất 2023</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- LIST PRODUCT -->
+            <div id="product" class="grid">
+                <!-- LAPTOP -->
+        
+                <div class="product_Laptop">
+                    <h3 class="product_Nav">laptop</h3>
+                    <div class="list_Product">
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\Laptop\pic1.png" alt="">
+                            <div class="price">29.990.000đ</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"  type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+        
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\Laptop\Pic2.png" alt="">
+                            <div class="price">38.000.000đ</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit" >thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\Laptop\Pic3.png" alt="">
+                            <div class="price">32.000.000 VND</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\Laptop\Pic4.png" alt="">
+                            <div class="price">29.990.000 VND</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\Laptop\Pic5.png" alt="">
+                            <div class="price">34.500.000 VND</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PHẦN MỀM -->
+                <div class="product_Software">
+                    <h3 class="product_Nav">Phần mềm</h3>
+                    <div class="list_Product">
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\PhanMem\11.webp" alt="">
+                            <div class="product_name">Bộ định tuyến WiFi 6 ASUS RT-AX88U Chuẩn AX6000</div>
+                            <div class="price">8,190,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+        
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\PhanMem\22.webp" alt="">
+                            <div class="product_name">USB thu sóng WiFi 5 ASUS USB-AC53 Chuẩn AC1200</div>
+                            <div class="price">550,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\PhanMem\33.webp" alt="">
+                            <div class="product_name">Card mạng WiFi 6 Asus PCE-AX3000 chuẩn AX3000</div>
+                            <div class="price">1,190,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\PhanMem\44.webp" alt="">
+                            <div class="product_name">Phần mềm Windows 11 Home Online DwnLd NR KW9-00664</div>
+                            <div class="price">3,190,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\PhanMem\66.webp" alt="">
+                            <div class="product_name">Phần mềm Windows 10 Pro Online DwnLd NR FQC-09131</div>
+                            <div class="price">4,790,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--LINHKIEN -->
+                <div class="product_LinhKien">
+                    <h3 class="product_Nav">linh kiện</h3>
+                    <div class="list_Product">
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\LinhKien\11.webp" alt="">
+                            <div class="product_name">Bàn phím Keychron K8 Pro Keycap Xanh Khung Nhôm Led RGB</div>
+                            <div class="price">2,590,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+        
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\LinhKien\22.webp" alt="">
+                            <div class="product_name">Bàn phím cơ FL-Esports CMK68SAM 3 Mode Wireless Metal Heart </div>
+                            <div class="price">2,899,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\LinhKien\33.webp" alt="">
+                            <div class="product_name">Chuột Razer Basilisk X HyperSpeed<br>Chuột không dây</div>
+                            <div class="price">1,090,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\LinhKien\44.webp" alt="">
+                            <div class="product_name">Tai nghe Zidli FCore FH11U RGB 7.1 Pink</div>
+                            <div class="price">410,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="info_Product">
+                            <img class ="img_Product"src="..\IMAGE\LinhKien\55.webp" alt="">
+                            <div class="product_name">Phần mềm Windows 10 Pro Online DwnLd NR FQC-09131</div>
+                            <div class="price">4,790,000₫</div>
+                            <div class="info_Product__Btn">
+                                <button class = "btn info_Product__Btn--shopping while"type="submit" onclick="showMessAddCart()">thêm vào <br>giỏ hàng</button>
+                                <button class = "btn info_Product__Btn--buy while"type="submit">mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECION: FOOTER -->
+        <div id="footer">
+            <div class="footer_Container">
+                <!-- CONTACT-->
+                <div class="footer_contact">
+                    <h3>Địa chỉ:</h3>
+                    <i class="local_Icon fa-solid fa-location-dot"></i>
+                    <p class="footer_Local">&emsp; ĐH Công Nghệ thành phố HCM (IUH) 14 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh <br></p>
+                    <h3 class="contact_Title">Thông tin liên hệ</h3>
+                    <a class="contact_info" href="tel:+84905927548">
+                        <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                        <h3 class="phone_Title">Liên hệ mua hàng: </h3>
+                        <h3 class="phone_Number">0905927548</h3>
+                    </a>
+                    <a class="contact_info" href="tel:+84905927548">
+                        <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                        <h3 class="phone_Title">Hỗ trợ khách hàng: </h3>
+                        <h3 class="phone_Number">0905927548</h3>
+                    </a>
+                    <h3 class="social_Title">Fanpage</h3>
+                    <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                        <i class="contact_Icon fa-brands fa-facebook"></i>
+                        <h3 class="footer_Social">Facebook: &emsp;</h3>
+                        <h4 class="Social_Link">https://www.facebook.com/</h4>
+                    </a>
+                    <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                        <i class="contact_Icon fa-brands fa-twitter"></i>
+                        <h3 class="footer_Social">Twitter:&emsp;&emsp;&nbsp;&nbsp;</h3>
+                        <h4 class="Social_Link">https://twitter.com/</h4>
+                    </a>
+                    <img class="footer_BCT" src="../IMAGE/footer_BaoHanh.webp" alt="">
+                </div>
+                <!-- MEMBER -->
+                <div class="footer_member">
+                    <h1 class="title">THÔNG TIN NHÓM 4</h1>
+                    <div class="footer_info">
+                        <p class="info_Member">
+                            <b class="info_Title">HỌ VÀ TÊN       &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;                        MÃ SINH VIÊN <br></b>
+                            Vũ Huy Hiệu 	 &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;      19631461 <br>
+                            Lại Dương Minh Hiếu	 &emsp;&emsp;&emsp;   21044141<br>
+                            Nguyễn Quang Hậu	&emsp;&emsp;&emsp;&emsp;    21005611 <br>
+                            Nguyễn Văn Hảo	    &emsp;&emsp;&emsp;&emsp;&emsp;    21021191<br>
+                            Nguyễn Vũ Hào	     &emsp;&emsp;&emsp;&ensp;&emsp;&emsp;   21001195<br>
+        
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
         </div>
     </div>
+    <!-- Messager Addcart Success -->
+    <div id="addcart--success">
+        <div class="addcart__icon_exit">
+            <i class=" fa-sharp fa-solid fa-circle-xmark"></i>
+        </div>
+        <img class = "icon--success"src="../IMAGE/Icon_AddSuccess.jpg" alt="">
+        <div class = "addcart__content">          
+            <h3 class="addcart__content--title">Quý khách đã thêm hàng thành công vào giỏ hàng !!! </h3>
+            <p class="addcart__content--subTitle">
+                Quý khách vui lòng kiểm tra giỏ hàng 
+            </p>
+        </div>
+    </div>
+    <!-- show panel form BUY NOW -->
+    <div id="buyNowArea">
+        <div id="form_buy">
+            <h2 class="form_buy__title">Đăng kí mua hàng</h2>
+            <div class="buyNow__icon_exit">
+               <i class=" fa-sharp fa-solid fa-circle-xmark"></i>
+           </div>
+            <form action="">
+               <div class="form_buy__container--info">
+                   <label for="">Họ và tên:</label>
+                   <input type="text" class="form_buy__info" placeholder="VD: Nguyên Văn A..." id = "formBuyNow_Name">
+               </div>
+               <div class="form_buy__container--info">
+                   <label for="">Địa chỉ:</label>
+                   <input type="text" class="form_buy__info" placeholder="VD:120 Phạm Văn Đồng,Gò Vấp,..." id = "formBuyNow_Address">
+               </div><div class="form_buy__container--info">
+                   <label for="">Số điện thoại:</label>
+                   <input type="tel" class="form_buy__info" placeholder="VD:0903001023" id = "formBuyNow_Tel">
+               </div><div class="form_buy__container--info">
+                   <label for="">Email</label>
+                   <input type="email" class="form_buy__info" placeholder="VD:adass123@gmail.com" id = "formBuyNow_Email">
+               </div><div class="form_buy__container--info">
+                   <label for="">Ghi chú</label>
+                   <textarea name="" id="" cols="30" rows="5" placeholder="Viết bình luận..."></textarea>
+               </div><div class="form_buy__container--info" >
+                   <label for="">Đơn hàng</label>
+                   <input type="text" class="form_buy__info" id = "donHangInput">
+               </div>
+               <div type="submit" id = "formBuyNow_register">Đăng kí</div>
+               
+            </form>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="../JS/action_HomePage.js"></script>
 </body>
 </html>

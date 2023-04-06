@@ -16,7 +16,7 @@ html{
 
 #background{
 
-    background-image: url(../IMAGE/login.jpg);
+    background: no-repeat center/cover url(../IMAGE/login.jpg);
     height: 100vh;
 }
 
@@ -30,14 +30,16 @@ html{
     opacity: 0.9;
     border-radius: 50px;
     box-shadow: 0 0 20px violet;
+    
 }
+
+
 
 #container .title_LogIn{
     text-align: center;
     font-size: 28px;
     margin-top: 24px;
     text-transform: uppercase;
-
 }
 
 
@@ -103,7 +105,6 @@ html{
     margin-top: 28px;
     border-radius: 20px;
     margin-bottom: 32px;
-
 }
 
 #container .btn_logIN:hover{
@@ -114,6 +115,8 @@ html{
 #container .btn_logIN:active{
     opacity: 0.9;
     border: 3px solid;
+
+    
 }
 
 #container .other_LogIn{
@@ -162,6 +165,7 @@ html{
     width: 100px;
     border: 1px solid;
     outline: none;
+    
 }
 
 #container .btn_LogIn:hover{

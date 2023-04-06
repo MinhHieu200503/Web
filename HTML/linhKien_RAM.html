@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/linhKien_VGA.CSS">
+    <link rel="stylesheet" href="../CSS/style_Header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style_head.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="../HTML/index_Header.html"><img src="../IMAGE/logo1.jpg" alt="" class="logoStore"></a>
+        <div class="header_First">
+            <div class="nav_Search">
+                <div class="search--container">
+                    <input class="find_Header" type="text" placeholder="Tìm kiếm " >
+                    <div class="search_Icon"><i class="Icon_Search_Into fa-solid fa-magnifying-glass"></i></div>
+                </div>
+    
+            </div>
+            <div class="log_In">
+                <a href="../HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
+                <i class="LogIn_Icon fa-solid fa-user"></i>
+            </div>
+    
+    
+        </div>
+        <ul class="nav">
+            <!--  -->
+            <a href="../HTML/trangchulaptop.html">
+                <li>                       
+                    <p>
+                        <i class="fa-solid fa-laptop"></i>
+                        laptop
+                    </p>
+
+                </li>
+            </a>
+            <!--  -->
+            <a href="#">
+                <li>                       
+                    <p>
+                        <i class="fa-sharp fa-solid fa-book"></i>
+                        phần mềm
+                    </p>
+
+                </li>
+            </a>
+            <!--  -->
+            <li class="container__Submenu">                       
+                    <p>
+                        <i class="fa-sharp fa-regular fa-keyboard"></i>
+                        linh kiện
+                    </p>
+                    <ul class="submenu">
+                        <a href="../HTML/linhKien_CPU.html"><li><p>CPU</p></li></a>
+                        <a href="../HTML/linhKien_Main.html"><li><p>MAIN</p></li></a>
+                        <a href="../HTML/linhKien_VGA.html"><li><p>VGA</p></li></a>
+                        <a href="../HTML/linhKien_RAM.html"><li><p>RAM</p></li></a>
+                        <a href="../HTML/linhKien_SSD.html"><li><p>SSD</p></li></a>
+                        <a href="#"><li><p>PHỤ KIỆN</p></li></a>          
+                    </ul>
+            </li>
+            <!--  -->
+            <a href="#">
+                <li>                       
+                    <p>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                         bảo hành
+                    </p>
+
+                </li>
+            </a>
+            <!--  -->
+            <a href="#">
+                <li>                       
+                    <p>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                         sửa chữa
+                    </p>
+
+                </li>
+            </a>
+    
+            <a href="../">
+                <li>                       
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                         liên hệ
+                    </p>
+
+                </li>
+            </a>
+            
+    
+        </ul>
+        <a class = "shopping"href="">
+            <h3 class="shopping_title">Giỏ hàng</h3>
+            <i class="shopping_Cart fa-solid fa-cart-shopping"></i>
+            <div class="count_product" id="cart-count">
+                0
+            </div>
+    
+        </a>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="boLoc">
+            <div class="boLoc_header" style="background-color: rgb(237, 234, 234);">
+                <h4 style="margin-left: 20px; padding: 10px 0px;">BỘ LỌC</h4>
+            </div>
+            <div class="boLoc_body">
+                <div style="padding: 15px; height: 55px;">
+                    <h5 style="float: left; margin-right: 140px; margin-top: 5px;">Hãng sản xuất</h5>
+                    <div class="boxHSX">Asus</div>
+                    <div class="boxHSX">Coloful</div>
+                    <div class="boxHSX">Gigabyte</div>
+                    <div class="boxHSX">MSI</div>
+                    <div class="boxHSX">Palit</div>
+
+                </div>
+                <div style="padding: 15px;">
+                    <h5 style="float: left;margin-right: 175px; margin-top: 5px;">Khoản giá</h5>
+                    <div class="boxKGia">Dưới 1 triệu</div>
+                    <div class="boxKGia">1 triệu-2 triệu</div>
+                    <div class="boxKGia">2 triệu-4 triệu</div>
+                    <div class="boxKGia">4 triệu-6 triệu</div>
+                    <div class="boxKGia">6 triệu-8 triệu</div>
+                    <div class="boxKGia">8 triệu-10 triệu</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sản phâm -->
+
+        <div class="sanPham">
+            <div class="SP_header">
+                <h5 style="float: left; margin-right: 140px;">Sắp xếp theo</h5>
+                <input type="text" placeholder="Giá thấp nhất" style="float: right; height: 36px; width: 110px;">
+                <span style="float: right; margin: 0px 10px; margin-top: 3px;">-</span>
+                <input type="text" placeholder="Giá cao nhất" style="float: right; height: 36px; width: 110px;  margin-left: 15px;">
+                <div class="boxSP_SapXep">A-Z</div>
+                <div class="boxSP_SapXep">Còn hàng</div>
+                <div class="boxSP_SapXep">Mới nhất</div>
+                <div class="boxSP_SapXep">Giá tăng dần</div>
+                <div class="boxSP_SapXep">Giá giảm dần</div>
+                <div class="boxSP_SapXep">Luợt xem</div>
+            </div>
+
+            <div class="SP_body">
+                <a href="/HTML/ChiTietSP/RAM/chitietRAM1.html" style="text-decoration: none; color: inherit;">
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM1.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="/HTML/ChiTietSP/RAM/chitietRAM2.html" style="text-decoration: none; color: inherit;">
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM2.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RAKM0063 </h6>
+                            <p>
+
+                                Ram Kingmax Zeus 8GB DDR4 bus 3600</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">999.000 đ</del>
+                            <h3 style="color: red;">779.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="/HTML/ChiTietSP/RAM/chitietRAM3.html" style="text-decoration: none; color: inherit;">
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM3.png" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RAGK0078 </h6>
+                            <p>
+
+                                RAM G.Skill TRIDENT Z Neo RGB 16GB (2x8GB) DDR4 3600MHz (F4-</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">3.699.000 đ</del>
+                            <h3 style="color: red;">1.899.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </a>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM4.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6>Mã SP: RAKT0086 </h6>
+                            <p>
+                                Ram Kingston FURY Beast 8GB (1x8GB) DDR4 2666Mhz</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">1.199.000 đ</del>
+                            <h3 style="color: red;">769.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM5.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM6.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM7.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM8.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM9.png" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM10.png" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM11.png" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM12.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM13.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM14.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="boxSP">
+                        <div class="SP_Img">
+                            <img src="/IMAGE/LinhKien/RAM/RAM15.jpg" alt="" style="display: block; margin: auto; width: 100%;">
+                        </div>
+                        <div class="SP_title">
+                            <h6> Mã SP: RACS0075 </h6>
+                            <p>
+                                Ram Corsair Vengeance LPX 16GB (1x16GB) DDR4 Bus 3200 MHz Black</p>
+                        </div>
+                        <div class="SP_Price">
+                            <del style="font-weight: bold; color: gray; font-size: large;">2.299.000 đ</del>
+                            <h3 style="color: red;">1.419.000 đ</h3>
+                        </div>
+                        <div class="SP_Footer">
+                            <a href="#" style="text-decoration: none; color: blue;">So sánh</a>
+                            <i class="fa-solid fa-cart-shopping" style="float: right; color: blue;"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="page">
+            <a href="" class="page-item" style="background-color:  rgb(1, 90, 241); color: aliceblue;">1</a>
+            <a href="" class="page-item">2</a>
+            <a href="" class="page-item">3</a>
+            <a href="" class="page-item">4</a>
+            <a href="" class="page-item">5</a>
+            <a href="" class="page-item">6</a>
+            <a href="" class="page-item">7</a>
+            <a href="" class="page-item">Next</a>
+        </div>
+
+        <div class="tinNoiBat">
+            <div class="tin_header">
+                <h3>TIN NỔI BẬT TRONG NGÀY</h3>
+            </div>
+            <hr>
+            <div class="tin_body_left">
+                <div style="height: 130px;">
+                    <div class="box_tin">
+                        <div class="tin_Img">
+                            <img src="/IMAGE/TIN_IMG/TIN1.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="tin_title" style="padding-left: 40px;">
+                        <h5>Laptop Asus Core i9 cấu hình khủng không nên bỏ lỡ</h5>
+                        <h6>Trong bài viết này, An Phát sẽ cung cấp cho bạn đánh giá chi tiết về các sản phẩm laptop Asus Core i9, giúp bạn có được cái nhìn</h6>
+                    </div>
+                </div>
+                <div style="height: 130px;">
+                    <div class="box_tin">
+                        <div class="tin_Img">
+                            <img src="/IMAGE/TIN_IMG/TIN2.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="tin_title" style="padding-left: 40px;">
+                        <h5>Laptop Asus Core i9 cấu hình khủng không nên bỏ lỡ</h5>
+                        <h6>Trong bài viết này, An Phát sẽ cung cấp cho bạn đánh giá chi tiết về các sản phẩm laptop Asus Core i9, giúp bạn có được cái nhìn</h6>
+                    </div>
+                </div>
+                <div style="height: 130px;">
+                    <div class="box_tin">
+                        <div class="tin_Img">
+                            <img src="/IMAGE/TIN_IMG/TIN3.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="tin_title" style="padding-left: 40px;">
+                        <h5>Laptop Asus Core i9 cấu hình khủng không nên bỏ lỡ</h5>
+                        <h6>Trong bài viết này, An Phát sẽ cung cấp cho bạn đánh giá chi tiết về các sản phẩm laptop Asus Core i9, giúp bạn có được cái nhìn</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="tin_body_right">
+                <div style="height: 130px;">
+                    <div class="box_tin">
+                        <div class="tin_Img">
+                            <img src="/IMAGE/TIN_IMG/TIN1.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="tin_title" style="padding-left: 40px;">
+                        <h5>Laptop Asus Core i9 cấu hình khủng không nên bỏ lỡ</h5>
+                        <h6>Trong bài viết này, An Phát sẽ cung cấp cho bạn đánh giá chi tiết về các sản phẩm laptop Asus Core i9, giúp bạn có được cái nhìn</h6>
+                    </div>
+                </div>
+                <div style="height: 130px;">
+                    <div class="box_tin">
+                        <div class="tin_Img">
+                            <img src="/IMAGE/TIN_IMG/TIN1.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="tin_title" style="padding-left: 40px;">
+                        <h5>Laptop Asus Core i9 cấu hình khủng không nên bỏ lỡ</h5>
+                        <h6>Trong bài viết này, An Phát sẽ cung cấp cho bạn đánh giá chi tiết về các sản phẩm laptop Asus Core i9, giúp bạn có được cái nhìn</h6>
+                    </div>
+                </div>
+                <div style="height: 130px;">
+                    <div class="box_tin">
+                        <div class="tin_Img">
+                            <img src="/IMAGE/TIN_IMG/TIN6.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="tin_title" style="padding-left: 40px;">
+                        <h5>Laptop Asus Core i9 cấu hình khủng không nên bỏ lỡ</h5>
+                        <h6>Trong bài viết này, An Phát sẽ cung cấp cho bạn đánh giá chi tiết về các sản phẩm laptop Asus Core i9, giúp bạn có được cái nhìn</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_Container">
+            <!-- CONTACT-->
+            <div class="footer_contact">
+                <h3>Địa chỉ:</h3>
+                <i class="local_Icon fa-solid fa-location-dot"></i>
+                <p class="footer_Local">&emsp; ĐH Công Nghệ thành phố HCM (IUH) 14 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh <br></p>
+                <h3 class="contact_Title">Thông tin liên hệ</h3>
+                <a class="contact_info" href="tel:+84905927548">
+                    <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                    <h3 class="phone_Title">Liên hệ mua hàng: </h3>
+                    <h3 class="phone_Number">0905927548</h3>
+                </a>
+                <a class="contact_info" href="tel:+84905927548">
+                    <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                    <h3 class="phone_Title">Hỗ trợ khách hàng: </h3>
+                    <h3 class="phone_Number">0905927548</h3>
+                </a>
+                <h3 class="social_Title">Fanpage</h3>
+                <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                    <i class="contact_Icon fa-brands fa-facebook"></i>
+                    <h3 class="footer_Social">Facebook: &emsp;</h3>
+                    <h4 class="Social_Link">https://www.facebook.com/</h4>
+                </a>
+                <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                    <i class="contact_Icon fa-brands fa-twitter"></i>
+                    <h3 class="footer_Social">Twitter:&emsp;</h3>
+                    <h4 class="Social_Link">https://twitter.com/</h4>
+                </a>
+                <img class="footer_BCT" src="../IMAGE/footer_BaoHanh.webp" alt="">
+            </div>
+            <!-- MEMBER -->
+            <div class="footer_member">
+                <h1 class="title">THÔNG TIN NHÓM 4</h1>
+                <div class="footer_info">
+                    <p class="info_Member">
+                        <b class="info_Title">HỌ VÀ TÊN       &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;                        MÃ SINH VIÊN <br></b> Vũ Huy Hiệu &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 19631461 <br> Lại Dương Minh Hiếu &emsp;&emsp;&emsp;
+                        21044141
+                        <br> Nguyễn Quang Hậu &emsp;&emsp;&emsp;&emsp; 21005611 <br> Nguyễn Văn Hảo &emsp;&emsp;&emsp;&emsp;&emsp; 21021191<br> Nguyễn Vũ Hào &emsp;&emsp;&emsp;&ensp;&emsp;&emsp; 21001195<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

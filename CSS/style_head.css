@@ -1,0 +1,229 @@
+#header{
+    background-color: white;
+    width: 100%;
+    height: var(--header_height);
+
+}
+
+
+
+.container__Submenu{
+    position: relative;
+}
+.submenu{
+    display: none;
+    top: 100%;
+    left: 2px;
+    z-index: 1;
+    position: absolute;
+width: 150px;
+height: 400px;
+}
+
+.container__Submenu:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    border-radius: 0px;
+    height: 44px;
+    display: inline-block;
+    min-width: 150px;
+    text-align: left;
+    background-color: #c82929;
+}
+
+
+
+.submenu li p{
+    color: white;
+    line-height: 44px;
+}
+
+.submenu li:hover  p{
+    color: black;
+}
+.submenu li:hover{
+    background-color: #c44141;
+
+}
+
+
+#header .logoStore{
+    height: var(--header_height);
+    width: 120px;
+    position: absolute;
+    left: 24px;
+}
+
+#header .header_First,
+#header .nav_Search{
+    height: calc(var(--header_height) / 2);
+}
+
+#header .log_In{
+    position: absolute;
+    top: 4px;
+    right: 39px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#header .log_In .title{
+    display: inline-block;
+    padding-right: 8px;
+    color: black;
+}
+
+#header .log_In:active a,
+#header .log_In:active i{
+    color: #ccc;
+}
+
+#header .log_In .LogIn_Icon{
+    font-size: 21px;
+} 
+
+#header  .shopping_Cart{
+    position: absolute;
+    top: 48px;
+    right: 36px;
+    font-size: 28px;
+    -webkit-transform: scaleX(-1); 
+}
+
+#header .shopping_title{
+    position: absolute;
+    top: 52px;
+    right: 70px;
+    font-size: 18px;
+}
+
+#header  .shopping{
+    color: black;
+}
+
+#header  .shopping:hover{
+    color: #ccc;
+}
+
+#header  .shopping:hover .count_product{
+    opacity: 0.6;
+}
+
+#header  .count_product{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius:50% ;
+    top: 30px;
+    right: 16px;
+    text-align: center;
+    
+}
+
+#header .search--container{
+    justify-content: center;
+    display: flex;
+}
+
+#header .find_Header{
+    margin-top: 5px;
+    width: 30%;
+    padding:5px;
+    /* top: 8px; */
+    right: 611px;
+    border-radius: 15px 0 0 15px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 12px;
+}
+
+#header  .search_Icon .Icon_Search_Into{
+    padding: 4px 6px;
+    
+}
+
+#header  .search_Icon{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 42px;
+    height: 31px;
+    background-color: #ccc;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid;
+    display: inline-block;
+}
+
+#header  .search_Icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+
+#header .nav{
+    width: 100%;
+    text-align: center;
+    
+}
+
+#header .nav li{
+    
+    font-weight: 700;
+    display: inline-block;
+    color: black;
+    margin-left: -4px;
+    line-height: var(--divide_header);
+    text-transform: uppercase;
+    padding: 0px 28px;
+    white-space: -4px;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+#header .nav li a{
+    text-decoration: none;
+    color: black;
+}
+#header .nav>a:hover>li {
+    background-color: black;
+    cursor: pointer;
+}
+
+.container__Submenu:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+
+#header .nav li:hover p {
+    color: white;
+}
+
+#header .nav i{
+    display: block;
+    line-height: var(--divide_header);
+    text-align: center;
+}
+
+.nav{
+    margin-left: 50%;
+    transform: translateX(-25%);
+
+}
+
+.container__Submenu:nth-child(3){
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    top: 100%;
+    left: -24px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../CSS/Lienhe.css">
+	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
+	<script src="../JS/bootstrap.js"></script>
+	<script src="../JS/bootstrap.min.js"></script>
+</head>
+<body>
+    <form action="#" method="post">
+		<h2>Nếu bạn gặp khó khăn, hãy liên hệ với chúng tôi</h2>
+
+		<label for="name">Họ và tên</label>
+		<input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" placeholder="Nhập địa chỉ email của bạn" required>
+
+		<label for="message">Nội dung</label>
+		<textarea id="message" name="message" placeholder="Nhập nội dung liên hệ của bạn" required></textarea>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	       Gửi
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	      <div class="modal-dialog">
+	        <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+		          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		    <div class="modal-body">
+		        Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi lại bạn trong thời gian sớm nhất.
+		    </div>
+		    <div class="modal-footer">
+		       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+		    </div>
+	    </div>
+	    </div>
+        </div>
+  
+	</form>
+	
+</body>
+</html>

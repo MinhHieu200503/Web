@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELL</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/laptop.css">
+    <link rel="stylesheet" href="../CSS/style_Header.css">
+    <script type="text/javascript" src="../JS/laptop.js" ></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- SECTION: CONTENT -->
+        <div id="content" class="grid">
+    <!--SECTION --> 
+
+        <section>
+        <div id="tap1" class="tabcontent">
+            <ul>
+                <li>
+                    <div class="laptop-item">
+                        <div class="laptop-top">
+                            <a href="" class="laptop-thumb">
+                                <img src="../IMG/4.jpeg" />
+                            </a>
+                        </div>
+                        <div class="laptop-bottom">
+                            <a href="" class="laptop-cat"> DELL UI79-37 </a>
+                            <a href="../HTML/lap4.html" class="laptop-name">Thông tin laptop</a>
+                            <div class="laptop-price">17.000.000</div>
+                            <a href="" class="laptop-buy">
+                                <img src="../IMG/th.jpeg" />
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="laptop-item">
+                        <div class="laptop-top">
+                            <a href="" class="laptop-thumb">
+                                <img src="../IMG/3.jpeg" />
+                            </a>
+                        </div>
+                        <div class="laptop-bottom">
+                            <a href="" class="laptop-cat"> DELL U876 </a>
+                            <a href="../HTML/lap3.html" class="laptop-name">Thông tin laptop</a>
+                            <div class="laptop-price">32.000.000</div>
+                            <a href="" class="laptop-buy">
+                                <img src="../IMG/th.jpeg" />
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!--ARTICLE -->
+
+            <article>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'tap1')" id="defaultOpen">1</button>
+                </div>
+            </article>
+            <Script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                document.getElementById("defaultOpen").click();
+            </Script>
+        </section>
+        </div>
+   </div>
+</body>
+</html>

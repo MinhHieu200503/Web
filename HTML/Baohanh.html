@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baohanh</title>
+    <link rel="stylesheet" href="../CSS/Baohanh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style_head_Bao_Hieu.css">
+    <script src="https://kit.fontawesome.com/b64565a5da.js" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+    #menu {grid-area: h1; }
+    #header {grid-area: h2;}
+    #banner {grid-area: h3;}
+    #content1 {grid-area: h4;}
+    #content2 {grid-area: h5;}
+    #content3 {grid-area: h6;}
+    #dangky {grid-area: h7;}
+    #camon {grid-area: h8;}
+    #footer {grid-area: h9;}
+    #background{
+        display: grid;
+        grid-template-areas: 
+        'h1 h1 h1 h1'
+        'h2 h2 h2 h2'
+        'h3 h1 h3 h3'
+        'h4 h4 h4 h4'
+        'h5 h5 h5 h5'
+        'h6 h6 h6 h6'
+        'h7 h7 h7 h7'
+        'h8 h8 h8 h8'
+        'h9 h9 h9 h9';
+    }
+</style>
+<body>
+    <div id="background">
+        <div id="menu">
+            <a href="../HTML/index_Header.html"><img src="../IMAGE/logo1.jpg" alt="" class="logoStore"></a>
+            <div class="header_First">
+                <div class="nav_Search">
+                    <div class="search--container">
+                        <input class="find_Header" type="text" placeholder="Tìm kiếm " >
+                        <div class="search_Icon"><i class="Icon_Search_Into fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+        
+                </div>
+                <div class="log_In">
+                    <a href="../HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
+                    <i class="LogIn_Icon fa-solid fa-user"></i>
+                </div>
+        
+        
+            </div>
+            <ul class="nav">
+                <!--  -->
+                <a href="../HTML/trangchulaptop.html">
+                    <li>                       
+                        <p>
+                            <i class="fa-solid fa-laptop"></i>
+                            laptop
+                        </p>
+
+                    </li>
+                </a>
+                <!--  -->
+                <a href="#">
+                    <li>                       
+                        <p>
+                            <i class="fa-sharp fa-solid fa-book"></i>
+                            phần mềm
+                        </p>
+
+                    </li>
+                </a>
+                <!--  -->
+                <li class="container__Submenu">                       
+                        <p>
+                            <i class="fa-sharp fa-regular fa-keyboard"></i>
+                            linh kiện
+                        </p>
+                        <ul class="submenu">
+                            <a href="../HTML/linhKien_CPU.html"><li><p>CPU</p></li></a>
+                            <a href="../HTML/linhKien_Main.html"><li><p>MAIN</p></li></a>
+                            <a href="../HTML/linhKien_VGA.html"><li><p>VGA</p></li></a>
+                            <a href="../HTML/linhKien_RAM.html"><li><p>RAM</p></li></a>
+                            <a href="../HTML/linhKien_SSD.html"><li><p>SSD</p></li></a>
+                            <a href="#"><li><p>PHỤ KIỆN</p></li></a>          
+                        </ul>
+                </li>
+                <!--  -->
+                <a href="#">
+                    <li>                       
+                        <p>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                             bảo hành
+                        </p>
+
+                    </li>
+                </a>
+                <!--  -->
+                <a href="#">
+                    <li>                       
+                        <p>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                             sửa chữa
+                        </p>
+
+                    </li>
+                </a>
+        
+                <a href="../">
+                    <li>                       
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                             liên hệ
+                        </p>
+
+                    </li>
+                </a>
+                
+        
+            </ul>
+            <a class = "shopping"href="">
+                <h3 class="shopping_title">Giỏ hàng</h3>
+                <i class="shopping_Cart fa-solid fa-cart-shopping"></i>
+                <div class="count_product" id="cart-count">
+                    0
+                </div>
+        
+            </a>
+        </div>
+
+        <div id="header"></div>
+        <div id="banner">
+            <div class="td"><img src="../IMAGE/con1.png" alt=""></div>
+            <div class="logo"><img src="../IMAGE/logobannerk.png" alt=""></div>
+            <div class="text">
+                <p>Nếu quý khách gặp khó khăn trong việc liên hệ Trung Tâm Bảo Hành, Quý khách vui lòng
+                    liên hệ với bộ phận chăm sóc khách hàng của chúng tôi theo thông tin sau để được hỗ trợ:
+                </p>
+                <p>E-mail: cskh@LaptopStore.com<li>Hotline:********</li></p>
+            </div>
+        </div>
+
+        <div id="content1">
+            <div id="phongchu">
+                <u><h1>I.Các bước bảo hành sản phẩm</h1></u>
+            </div>
+            <div class="o1">
+                <div>
+                    <img class="icon1" src="../IMAGE/icon1.png" alt="icon1" align="right">
+                </div>
+                <div class="B_1">
+                    <nav>
+                        <h3 class="b1">Bước 1</h3>
+                    </nav>
+                    <nav>
+                        <p class="step1">STEP1</p>
+                    </nav>
+                </div>
+                <div class="Buoc1">
+                    <ul class="dong1">Khi có nhu cầu bảo hành sản phẩm, quý khách vui lòng liên hệ với chúng tôi qua các hình thức sau: 
+                        <li>Tổng đài bảo hành:</li>
+                        <li><b>Trò chuyện trực tiếp</b> với chúng tôi tại Fanpage hoặc Website</li>
+                        <li><b>Liên hệ trực tiếp</b> với chúng tôi tại các chi nhánh của cửa hàng</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="o2">
+                <div>
+                    <img class="icon2" src="../IMAGE/icon2.png" alt="icon2" align="left">
+                </div>
+                <div class="B_2">
+                    <nav>
+                        <h3 class="b2">Bước 2</h3>
+                    </nav>
+                    <nav>
+                        <p class="step2">STEP2</p>
+                    </nav>
+                </div>
+                <div class="Buoc2">
+                    <ul class="dong2">
+                        <li>Quý khách gửi hoặc mang sản phẩm cần bảo hành đến các chi nhánh của cửa hàng.</li>
+                        <li>Quý khách vui lòng liên hệ nhân viên tư vấn trước khi gửi hàng để được hôc trợ cũng như tránh thất thoát hàng hóa.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="o3">
+                <div>
+                    <img class="icon3" src="../IMAGE/icon3.png" alt="icon3" align="right">
+                </div>
+                <div class="B_3">
+                    <nav>
+                        <h3 class="b3">Bước 3</h3>
+                    </nav>
+                    <nav>
+                        <p class="step3">STEP3</p>
+                    </nav>
+                </div>
+                <div class="Buoc3">
+                    <div class="dong3">
+                        <li>Hoàn tất xử lý bảo hành & bàn giao sản phẩm đến khách hàng.</li>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2">
+            <div id="phongchu">
+                <u><h1>II.Điều kiện bảo hành sản phẩm</h1></u>
+            </div>
+            <div id="khung1">
+                <img src="../IMAGE/yes.png" alt="">
+            </div>
+            <div id="khung2">
+                <ul class="sub-khung2">
+                    <li>Sản phẩm nếu có tem niêm phong (seal) trên sản phẩm thì tem niêm phong phải còn nguyên vẹn</li>
+                    <li>Đối với sản phẩm bảo hành trên hộp: sản phẩm còn đầy đủ hộp.</li>
+                    <li>Sản phẩm không trầy xước, cấn móp, bể, vỡ, biến dạng so với ban đầu.</li>
+                </ul>
+            </div>
+            <div id="khung3">
+                <img src="../IMAGE/no.png" alt="">
+            </div>
+            <div id="khung4">
+                <ul class="sub-khung4">
+                    <li>Hết thời hạn bảo hành.</li>
+                    <li>Không có tem niêm phong, hoặc bị tẩy xóa, không còn nguyên dạng ban đầu.</li>
+                    <li>Bị tác động vật lý làm trầy xước, cong vênh, rạn nứt, bể vỡ trong quá trình quá trình sử dụng.</li>
+                    <li>Bị hư hỏng do tự ý thảo mở, sửa chữa, thay đổi cấu trúc sản phẩm bên trong mà chưa có sự xác nhận đồng ý hoặc giám sát bởi kỹ thuật viên.</li>
+                    <li>Bị hư hỏng, chập, cháy do sử dụng sai mục đích, tự ý tháo, lắp đặt không tuân theo các hướng dẫn sử dụng đính kèm theo sản phẩm.</li>
+                    <li>Bị hư hỏng do côn trùng xâm nhập (chuột, gián, kiến, mối…).</li>
+                    <li>Bị hư hỏng do thiên tai, hỏa hoạn, lụt lội, sét đánh, rỉ sét, hao mòn do môi trường gây ra.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="content3">
+            <div id="phongchu"><u><h1>III.Chính sách bảo hành chung</h1></u></div>
+            <div id="nd1">
+                <div class="cnt"><u><h3>1. Chính sách đổi mới 100%</h3></u></div>
+                <div class="img1"><img src="../IMAGE/đk.png" alt=""></div>
+                <div class="menu-nd1">
+                    <ul>
+                        <li>Sản phẩm có tem niêm phong (seal) còn nguyên vẹn.</li>
+                        <li>Sản phẩm không trầy xước, còn đầy đủ hộp, sách và phụ kiện.</li>
+                        <li>Hộp sản phẩm còn nguyên vẹn, không để rách, nát, biến dạng.</li>
+                    </ul>
+                </div>
+                <div class="img2"><img src="../IMAGE/maulap.png" alt=""></div>
+                <div class="img3"><img src="../IMAGE/o1.png" alt=""></div>
+                <div class="img4"><img src="../IMAGE/o2.png" alt=""></div>
+            </div>
+            <div id="nd2">
+                <div id="d1">
+                    <div class="cnt"><u><h3>2. Thời gian xửa lý đổi với sản phẩm bảo hành</h3></u></div>
+                </div>
+                <div id="A">
+                    <div class="imgA"><img src="../IMAGE/A-1.png" alt=""></div>
+                    <div class="ndA">
+                        <p>Nhân viên kĩ thuật sẽ tiến hành kiểm tra ngay thời điểm tiếp sản phẩm bảo hành: </p>
+                        <li>Phát hiện ra lỗi: Tiến hành xử lý bảo hành theo chính sách bảo hành của sản phẩm.</li>
+                        <li>Chưa phát hiện ra lỗi: Nhân viên sẽ giữ sản phẩm để kiểm tra trong 3 ngày làm việc , nếu sau 3 ngày không phát hiện lỗi , chúng tôi xin phép hoàn trả sản phẩm lại cho khách hàng.</li>
+                    </div>
+                </div>
+                <hr>
+                <div id="B">
+                    <div class="imgB"><img src="../IMAGE/B.png" alt=""></div>
+                    <div class="ndB">
+                        <p>Cửa hàng chúng tôi vẫn bảo hành sản phẩm theo yêu cầu của quý khách nhưng sẽ tính phí sửa chữa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hang">
+                <div class="cnt"><u><h3>3. Thông tin liên hệ bảo hành theo hãng</h3></u></div>
+                <div class="image-grid">
+                    <div class="row">
+                      <a href="https://www.asus.com/vn/support/" target="_blank"><img src="../IMAGE/hang1.png" alt="Image 1"></a>
+                      <a href="https://www.samsung.com/vn/support/warranty/" target="_blank"><img src="../IMAGE/hang2.png" alt="Image 2"></a>
+                      <a href="https://www.lg.com/vn/tro-giup/bao-hanh" target="_blank"><img src="../IMAGE/hang3.png" alt="Image 3"></a>
+                      <a href="https://www.coolermaster.com/vn/vi-vn/warranty/" target="_blank"><img src="../IMAGE/hang4.png" alt="Image 4"></a>
+                      <a href="https://www.dell.com/support/home/en-vn" target="_blank"><img src="../IMAGE/hang5.png" alt="Image 5"></a>
+                    </div>
+                    <div class="row">
+                      <a href="https://www.acer.com/vn-vi/support" target="_blank"><img src="../IMAGE/hang6.png" alt="Image 6"></a>
+                      <a href="https://support.hp.com/vn-en/check-warranty" target="_blank"><img src="../IMAGE/hang7.png" alt="Image 7"></a>
+                      <a href="https://www.lenovo.com/vn/vn/contact/" target="_blank"><img src="../IMAGE/hang8.png" alt="Image 8"></a>
+                      <a href="https://vn.aoc.com/index/explore/route/contact-us" target="_blank"><img src="../IMAGE/hang9.png" alt="Image 9"></a>
+                      <a href="https://www.apple.com/legal/warranty/products/embedded-mac-warranty-rest-of-apac-vietnamese.html" target="_blank"><img src="../IMAGE/hang10.png" alt="Image 10"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nd3">
+                <div id="d-1">
+                    <div class="cnt"><u><h3>4. Trường hợp sản phẩm bị lỗi kĩ thuật và Nhà sản xuất không còn sản phẩm thay thế, đổi trả bảo hành hoặc ngưng kinh doanh, khách hàng lựa chọn một trong những phương án sau</h3></u></div>
+                </div>
+                <div id="AA">
+                    <div class="imgAA"><img src="../IMAGE/A.png" alt=""></div>
+                    <div class="textAA">
+                        <p>Đổi ngay sản phẩm tương đương: Cùng nhóm, cùng cấu hình, cùng dung lượng, … hoặc cao hơn do cửa hàng đề xuất.</p>
+                    </div>
+                </div>
+                <div id="BB">
+                    <div class="imgBB"><img src="../IMAGE/B-1.png" alt=""></div>
+                    <div class="textBB">
+                        <p>Chúng tôi sẽ gửi sản phẩm bị lỗi về Hãng/Nhà sản xuất để sửa chữa hoặc thay thế theo qui định của Hãng và không thu phí phát sinh.</p>
+                    </div>
+                </div>
+                <div id="CC">
+                    <div class="imgCC"><img src="../IMAGE/C.png" alt=""></div>
+                    <div class="textCC">
+                        <p>Trong 1 tháng đầu tiên, Chúng tôi hoàn lại 80% giá trị sản phẩm theo hóa đơn. Từ tháng thứ 2 trở đi, trừ thêm 5% giá trị sản phẩm theo hóa đơn mỗi tháng nhưng trừ không quá tối đa 70% giá trị sản phẩm.</p>
+                    </div>
+                </div>
+                <div id="o3"><img src="../IMAGE/o33.png" alt=""></div>
+            </div>
+            <div id="vidu">
+                <p>VÍ DỤ : Nếu khách hàng trả sản phẩm ở tháng thứ nhất, LaptopStore sẽ hoàn lại 80% giá trị theo hóa đơn. Nếu khách hàng trả sản phẩm ở
+                    tháng thứ 2, thì sẽ trừ thêm 5% nên khách hàng sẽ được hoàn lại 75% giá trị theo hóa đơn (Tháng thứ 3 sẽ là 70%, …. , và tối đa là 30%
+                    giá trị theo hóa đơn).
+                </p>
+            </div>
+        </div>
+
+        <div id="dangky">
+            <h2>Đăng ký bảo hành</h2>
+            <form action="Baohanh.php" method="port" onsubmit="return validateForm();">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Họ và tên:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Số điện thoại:</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="product">Tên sản phẩm:</label>
+                  <input type="text" id="product" name="product" required>
+                </div>
+                <div class="form-group">
+                  <label for="serial">Số serial:</label>
+                  <input type="text" id="serial" name="serial" required>
+                </div>
+                <div class="form-group">
+                  <label for="problem">Vấn đề sản phẩm:</label>
+                  <textarea id="problem" name="problem" required></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <input type="submit" value="Đăng kí" id="btn_Submit">
+              </div>
+            </form>
+        </div>
+        <br>
+        <div id="camon">
+            <u><h1>LaptopStore CHÂN THÀNH CẢM ƠN QUÝ KHÁCH !</h1></u>
+        </div>
+
+        <div id="footer">
+            <div class="footer_Container">
+                <!-- CONTACT-->
+                <div class="footer_contact">
+                    <h3>Địa chỉ:</h3>
+                    <i class="local_Icon fa-solid fa-location-dot"></i>
+                    <p class="footer_Local">&emsp; ĐH Công Nghệ thành phố HCM (IUH) 14 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh <br></p>
+                    <h3 class="contact_Title">Thông tin liên hệ</h3>
+                    <a class="contact_info" href="tel:+84905927548">
+                        <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                        <h3 class="phone_Title">Liên hệ mua hàng: </h3>
+                        <h3 class="phone_Number">0905927548</h3>
+                    </a>
+                    <a class="contact_info" href="tel:+84905927548">
+                        <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                        <h3 class="phone_Title">Hỗ trợ khách hàng: </h3>
+                        <h3 class="phone_Number">0905927548</h3>
+                    </a>
+                    <h3 class="social_Title">Fanpage</h3>
+                    <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                        <i class="contact_Icon fa-brands fa-facebook"></i>
+                        <h3 class="footer_Social">Facebook: &emsp;</h3>
+                        <h4 class="Social_Link">https://www.facebook.com/</h4>
+                    </a>
+                    <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                        <i class="contact_Icon fa-brands fa-twitter"></i>
+                        <h3 class="footer_Social">Twitter:&emsp;&emsp;&nbsp;&nbsp;</h3>
+                        <h4 class="Social_Link">https://twitter.com/</h4>
+                    </a>
+                    <img class="footer_BCT" src="../IMAGE/footer_BaoHanh.webp" alt="">
+                </div>
+                <!-- MEMBER -->
+                <div class="footer_member">
+                    <h1 class="title">THÔNG TIN NHÓM 4</h1>
+                    <div class="footer_info">
+                        <p class="info_Member">
+                            <b class="info_Title">HỌ VÀ TÊN       &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;                        MÃ SINH VIÊN <br></b>
+                            Vũ Huy Hiệu 	 &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;      19631461 <br>
+                            Lại Dương Minh Hiếu	 &emsp;&emsp;&emsp;   21044141<br>
+                            Nguyễn Quang Hậu	&emsp;&emsp;&emsp;&emsp;    21005611 <br>
+                            Nguyễn Văn Hảo	    &emsp;&emsp;&emsp;&emsp;&emsp;    21021191<br>
+                            Nguyễn Vũ Hào	     &emsp;&emsp;&emsp;&ensp;&emsp;&emsp;   21001195<br>
+        
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--JS-->
+<script src="../JS/Baohanh.js"></script>
+</body>
+</html>

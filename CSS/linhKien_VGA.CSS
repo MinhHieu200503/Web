@@ -1,0 +1,160 @@
+:root{
+    --header_height:80px;
+    --divide_header:calc(var(--header_height) / 2);
+}
+
+
+
+.container {
+    height: 2200px;
+}
+
+body {
+    background: rgb(178, 173, 173);
+}
+
+.boLoc {
+    border: solid 1px rgb(140, 140, 140);
+    border-radius: 3px;
+}
+
+.boLoc_body {
+    height: 130px;
+}
+
+.boxHSX {
+    border: 1px solid gray;
+    float: left;
+    margin-left: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boxHSX:hover {
+    background-color: rgb(1, 90, 241);
+    color: white;
+}
+
+.boxKGia {
+    border: 1px solid gray;
+    float: left;
+    margin-left: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boxKGia:hover {
+    background-color: rgb(1, 90, 241);
+    color: white;
+}
+
+
+/* sản phẩm */
+
+.sanPham {
+    padding: 15px;
+    /* background-color: bisque; */
+    min-height: 1450px;
+}
+
+.SP_header {
+    height: 50px;
+}
+
+.boxSP_SapXep {
+    border: 1px solid gray;
+    float: right;
+    margin-left: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boxSP_SapXep:hover {
+    color: rgb(164, 164, 220);
+}
+
+.boxSP {
+    /* background-color: aquamarine; */
+    min-height: 300px;
+    width: 20%;
+    float: left;
+    border: 1PX solid rgb(218, 218, 218);
+    padding: 8px;
+}
+
+.SP_body {
+    margin: 0px -15px;
+}
+
+.boxSP:hover {
+    margin-top: -10px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.page {
+    /* background-color: aqua; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.page-item {
+    border: 0.5px solid gray;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: gray;
+    border-radius: 5px;
+}
+
+.page-item:hover {
+    background-color: rgb(1, 90, 241);
+    color: white;
+}
+
+.SP_Img {
+    height: 250px;
+}
+
+.SP_title {
+    height: 100px;
+}
+
+.tin_body_left {
+    width: 50%;
+    float: left;
+    height: 400px;
+    /* background-color: aquamarine; */
+}
+
+.tin_body_right {
+    width: 50%;
+    float: right;
+    height: 400px;
+    /* background-color: rgb(199, 217, 211); */
+}
+
+.box_tin:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.tin_Img {
+    width: 35%;
+    float: left;
+    padding: 10px;
+}
+
+.tin_title {
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+.tin_title:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
