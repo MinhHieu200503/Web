@@ -1,0 +1,37 @@
+@media screen and (max-width:1500px){
+    .img_Sale{
+        width: 100vw;
+        
+        height: 852px;
+    }
+
+    .news_sale{
+        width: 100vw;
+    }
+
+    #content .news .news_mess{
+        width: 100%;
+        margin-top: 44px;
+        overflow-y: scroll;
+    }
+
+    #content .mess_1 img,
+    #content .mess_2 img, 
+    #content .mess_3 img{
+        min-width: 20%;
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    #product .list_Product .info_Product{
+        max-width: calc(100% / 4 );
+    }
+}
+
+@media screen and (max-width:970px){
+    #product .list_Product .info_Product{
+        max-width: calc(100% / 3 );
+    }
+}
