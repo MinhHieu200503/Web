@@ -1,7 +1,7 @@
 /*section-left*/
                var index = 1;
                 function changeImage() {
-                    var images = ["../IMG/2.jpeg", "../IMG/3.jpeg", "../IMG/4.jpeg"];
+                    var images = ["../IMAGE/2.jpeg", "../IMAGE/3.jpeg", "../IMAGE/4.jpeg"];
                     document.getElementById('image').src = images[index];
                     index++;
                     if(index == images.length) {
