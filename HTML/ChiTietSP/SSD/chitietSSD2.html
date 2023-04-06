@@ -13,15 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../CSS/style_head.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- SECTION: HEADER -->
     <div id="header">
-        <div class="logo">
-            <img src="/IMAGE/Logo.jpg" alt="" class="logoStore">
-        </div>
+        <a href="../../../HTML/index_Header.html"><img src="../../../IMAGE/logo1.jpg" alt="" class="logoStore"></a>
         <div class="header_First">
             <div class="nav_Search">
                 <div class="search--container">
@@ -31,61 +30,79 @@
     
             </div>
             <div class="log_In">
-                <a href="../HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
+                <a href="../../../HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
                 <i class="LogIn_Icon fa-solid fa-user"></i>
             </div>
     
     
         </div>
         <ul class="nav">
-    
-            <li>
-                <a class="nav-item-link"" href="">
-    
-                    <i class="fa-solid fa-laptop"></i>
+            <!--  -->
+            <a href="../../../HTML/trangchulaptop.html">
+                <li>                       
+                    <p>
+                        <i class="fa-solid fa-laptop"></i>
                         laptop
-                </a>
-            </li>
-            <li>
-                <a class="nav-item-link" href="">
-    
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                    phần mềm
-                    </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item-link" href="">
-                    <i class="fa-sharp fa-regular fa-keyboard"></i>
-                    linh kiện
-                </a>
+                    </p>
 
-                <ul class="menu-sub">
-                    <li class="menu-sub-item">
-                        <a class="menu-sub-item-link" href="#">Phụ kiện</a>
-                    </li>
-                </ul>
+                </li>
+            </a>
+            <!--  -->
+            <a href="#">
+                <li>                       
+                    <p>
+                        <i class="fa-sharp fa-solid fa-book"></i>
+                        phần mềm
+                    </p>
+
+                </li>
+            </a>
+            <!--  -->
+            <li class="container__Submenu">                       
+                    <p>
+                        <i class="fa-sharp fa-regular fa-keyboard"></i>
+                        linh kiện
+                    </p>
+                    <ul class="submenu">
+                        <a href="../../../HTML/linhKien_CPU.html"><li><p>CPU</p></li></a>
+                        <a href="../../../HTML/linhKien_Main.html"><li><p>MAIN</p></li></a>
+                        <a href="../../../HTML/linhKien_VGA.html"><li><p>VGA</p></li></a>
+                        <a href="../../../HTML/linhKien_RAM.html"><li><p>RAM</p></li></a>
+                        <a href="../../../HTML/linhKien_SSD.html"><li><p>SSD</p></li></a>
+                        <a href="#"><li><p>PHỤ KIỆN</p></li></a>          
+                    </ul>
             </li>
+            <!--  -->
+            <a href="../../../HTML/Baohanh.html">
+                <li>                       
+                    <p>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                         bảo hành
+                    </p>
+
+                </li>
+            </a>
+            <!--  -->
+            <a href="../../../HTML/Suachua.html">
+                <li>                       
+                    <p>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                         sửa chữa
+                    </p>
+
+                </li>
+            </a>
     
-    
-            <li>
-                <a class="nav-item-link" href="">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    bảo hành
-                </a>
-            </li>
-    
-            <li>
-                <a class="nav-item-link" href="">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    sửa chữa
-                </a>
-            </li>
-            <li>
-                <a class="nav-item-link" href="">
-                    <i class="fa-solid fa-phone"></i>
-                    liên hệ
-                </a>
-            </li>
+            <a href="../../../HTML/Lienhe.html">
+                <li>                       
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                         liên hệ
+                    </p>
+
+                </li>
+            </a>
+            
     
         </ul>
         <a class = "shopping"href="">

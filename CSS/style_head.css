@@ -223,7 +223,9 @@ ul{
 }
 
 .submenu{
+    display: fixed;
     position: absolute;
     top: 100%;
     left: -24px;
+    z-index: 999;
 }
