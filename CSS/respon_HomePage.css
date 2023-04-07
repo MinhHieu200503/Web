@@ -1,12 +1,10 @@
 @media screen and (max-width:1500px){
     .img_Sale{
-        width: 100vw;
         
-        height: 852px;
     }
 
-    .news_sale{
-        width: 100vw;
+    #content .news .news_sale{
+        width: 100%;
     }
 
     #content .news .news_mess{
@@ -30,8 +28,45 @@
     }
 }
 
+@media screen and (max-width:1000px){
+    #respon__menu{
+        font-size: 24px;
+        margin: 48px 0 0 12px;
+        display: block !important;
+    }
+
+    
+    #header .nav{
+        display: none;
+        top: 130px;
+        left: 4px;
+        width: 150px;
+        z-index: 999;
+        position: absolute;
+        text-align: left;
+    }
+    
+    
+    #header .nav li{
+        width: 150px;
+        text-align: center;
+        padding: 8px;
+    }
+
+    #content .news .news_sale{
+        width: calc(100% - 150px);
+        float: right;
+    } 
+}
+
 @media screen and (max-width:970px){
     #product .list_Product .info_Product{
         max-width: calc(100% / 3 );
+    }
+}
+
+@media screen and (max-width:710px){
+    #product .list_Product .info_Product{
+        max-width: calc(100% / 1 );
     }
 }
