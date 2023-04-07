@@ -524,7 +524,6 @@ body{
 }
 
 #footer{
-    position: absolute;
     width: 100%;  
     background-color: #ccc;
     min-height: 400px;
