@@ -40,7 +40,7 @@ height: 400px;
     line-height: 44px;
 }
 
-.submenu li:hover  p{
+.submenu a:hover p{
     color: black;
 }
 .submenu li:hover{
@@ -223,9 +223,22 @@ ul{
 }
 
 .submenu{
-    display: fixed;
     position: absolute;
     top: 100%;
     left: -24px;
     z-index: 999;
+}
+
+.carousel-item>img{
+    position: relative;
+    z-index: -1;
+}
+
+.list-group-item{
+    z-index: -1;
+}
+
+#main-container hr{
+    position: relative;
+    z-index: -1;
 }

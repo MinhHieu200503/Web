@@ -26,22 +26,18 @@ setTimeout('changeBanner()',3000);
             var content = cart_count[i].textContent;
             content = parseInt(content);
             content = content+1
-            console.log(content);
+            // console.log(content);
             cart_count[i].innerHTML = `${content}`
         }
     }
 
 
 
-    var elementAddCart = document.getElementsByClassName("info_Product__Btn--shopping")
-    Array.from(elementAddCart).forEach(function(element){
-        element.addEventListener('click',addCart)
-    })
-
+    
 
 //function show cart add success
     function showMessAddCart(){
-        console.log("show mess");
+        // console.log("show mess");
         // show message
         let mess_addCart = document.getElementById('addcart--success');
         let all = document.getElementById('wrapper');
@@ -55,7 +51,7 @@ setTimeout('changeBanner()',3000);
         
         let close_let = document.getElementsByClassName('addcart__icon_exit');
         close_let[0].addEventListener('click',function(){
-            console.log("close by mouse");
+            // console.log("close by mouse");
             // chang attribute 
             let mess_addCart = document.getElementById('addcart--success');
             let all = document.getElementById('wrapper');
@@ -63,7 +59,7 @@ setTimeout('changeBanner()',3000);
             mess_addCart.style.display = 'none';
             // clearTimeout auto close toast
             clearTimeout(timeout);
-            console.log("close by mouse");
+            // console.log("close by mouse");
         });
     }
 
@@ -71,9 +67,15 @@ setTimeout('changeBanner()',3000);
     Array.from(btn_addCart).forEach(function(element){
         element.addEventListener('click',showMessAddCart);
     })
+
+    const elementAddCart = document.getElementsByClassName("info_Product__Btn--shopping")
+    Array.from(elementAddCart).forEach(function(element){
+        element.addEventListener('click',addCart)
+        
+    })
     // close mess showed
     function close(){
-        console.log("close by auto");
+        // console.log("close by auto");
         // chang attribute 
         let mess_addCart = document.getElementById('addcart--success');
         let all = document.getElementById('wrapper');
@@ -117,13 +119,7 @@ setTimeout('changeBanner()',3000);
         event.stopPropagation()
     })
 //update info product into form
-    const listProductName = [
-        'Predator Helios 18 PH1871948J',
-        'Predator Helios 16 PH167194N1',
-        'Dell AlienWare M15 R6 P109F001CBL',
-        'ROG Zephyrus G14 GA402RJL8030W',
-        'MSI Crosshair 17 A12UEZ 272VN',
-    ];
+
 
     // function addProductInput(i){
     //     let inputDonhang = document.getElementById('donHangInput');
@@ -173,3 +169,127 @@ setTimeout('changeBanner()',3000);
         else
             sts.style.display = 'block';
     })
+
+// Add item in shoping cart 
+// info_Product__Btn--shopping => button them vao gio hang
+
+let btn_addItem = document.getElementsByClassName('info_Product__Btn');
+
+// console.log(btn_addItem);
+
+let i = 0;
+let name_product = document.getElementsByClassName('product_name');
+let nameProduct = [
+    'Predator Helios 18 PH18 71 94SJ',
+    'Predator Helios 18 PH18 71 94SJ',
+    'Dell AlienWare M15 R6 P109F001CBL',
+    'ROG Zephyrus G14 GA402RJ L8030W',
+    'MSI crosshair 17 A12UEZ 272VN',
+    name_product[i].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+    name_product[i++].innerHTML,
+]
+
+
+
+let price = document.getElementsByClassName('price');
+i = 0;
+let priceArr=[
+    price[i].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+    price[i++].innerHTML,
+]
+i = 0;
+let imgProduct = document.getElementsByClassName('img_Product');
+let imgProductArr = [
+    imgProduct[i].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src,
+    imgProduct[i++].src   
+]
+// funtion save product wanna buy into localstorage
+
+    // container all btn add shopping-cart
+    let container_AddCart = document.getElementById('product');
+    
+    // function get element shopping cart clicked => target
+    let targetBtn = function(e){
+        const childNode = e.target.closest('.info_Product__Btn--shopping');
+        for(let i = 0;i<elementAddCart.length;i++ ){
+            if(elementAddCart[i] === childNode){
+                return i;
+            }  
+        }
+    }
+    const objectProductShopping = {
+        name:{},
+        img:{},
+        price:{}
+    }
+    // create variable temp to container product
+    const nameTmp = [];
+    const priceTmp = [];
+    const imgTmp = [];
+
+    // add event into container_AddCart
+    container_AddCart.addEventListener('click',function(e){
+        targetBtn(e);
+        let index = targetBtn(e);  
+        if(objectProductShopping.name === null){
+            nameTmp = nameProduct[index];
+            priceTmp = priceArr[index];
+            imgTmp = imgProductArr[index];
+        }
+        else{
+            nameTmp.push(nameProduct[index]);
+            priceTmp.push(priceArr[index]);
+            imgTmp.push(imgProductArr[index]);
+        }
+        
+        // add to object
+        objectProductShopping.name = nameTmp;
+        objectProductShopping.price = priceTmp;
+        objectProductShopping.img = imgTmp;
+        localStorage.removeItem('ShoppingCart')
+        localStorage.setItem('ShoppingCart',JSON.stringify(objectProductShopping));
+        let listProduct = JSON.parse(localStorage.getItem('ShoppingCart'));
+        console.log(listProduct)
+        // localStorage.removeItem('ShoppingCart')
+
+    });
+    
+    
+    
+
+
+    
