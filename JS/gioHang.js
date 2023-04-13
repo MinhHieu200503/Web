@@ -1,3 +1,9 @@
+// format money
+const VND = new Intl.NumberFormat('vi-VN', {
+  style: 'currency',
+  currency: 'VND',
+});
+
 // function increase quantity product
   let decrease_btn = document.getElementsByClassName('decrease');
   let value = document.getElementsByClassName('number'); //=> variable value
@@ -62,6 +68,7 @@ let getLocalstorege = function(){
                       </th>
                     </tr> `
   }
+  
   }
   let table = document.querySelector('.buy_table');
   table.innerHTML = table.innerHTML + product_table
@@ -125,7 +132,7 @@ table_shopping.addEventListener('click',function(e){
       subtotal = subtotal + parseInt(tmp)*value[i].value;
       
     }
-    total.innerHTML = subtotal+` VNĐ`
+    total.innerHTML = VND.format(subtotal);
   }
 
 localStoragePrice();
