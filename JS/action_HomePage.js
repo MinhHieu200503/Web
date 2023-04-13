@@ -257,10 +257,14 @@ let imgProductArr = [
         price:{}
     }
     // create variable temp to container product
-    const nameTmp = [];
-    const priceTmp = [];
-    const imgTmp = [];
+    let nameTmp = [];
+    let priceTmp = [];
+    let imgTmp = [];
 
+    let tmpLocalStorage = JSON.parse(localStorage.getItem('ShoppingCart'));
+    nameTmp = tmpLocalStorage.name;
+    priceTmp = tmpLocalStorage.price;
+    imgTmp = tmpLocalStorage.img;
     // add event into container_AddCart
     container_AddCart.addEventListener('click',function(e){
         targetBtn(e);
@@ -280,7 +284,7 @@ let imgProductArr = [
         objectProductShopping.name = nameTmp;
         objectProductShopping.price = priceTmp;
         objectProductShopping.img = imgTmp;
-        localStorage.removeItem('ShoppingCart')
+        // localStorage.removeItem('ShoppingCart')
         localStorage.setItem('ShoppingCart',JSON.stringify(objectProductShopping));
         let listProduct = JSON.parse(localStorage.getItem('ShoppingCart'));
         console.log(listProduct)
