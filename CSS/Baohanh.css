@@ -138,8 +138,53 @@ html{
     cursor: pointer;
 }
 
+#menu .container__Submenu{
+    position: relative;
+}
 
+#menu .submenu{
+    position: absolute;
+    background-color: #3e8e41;
+    top:100%;
+    left: 0px;
 
+}
+
+.submenu li{
+    border-radius: 0px;
+    height: 44px;
+    display: inline-block;
+    min-width: 150px;
+    text-align: left;
+    background-color: #c82929;
+}
+
+.submenu{
+    display: none;
+    top: 100%;
+    left: 2px;
+    z-index: 1;
+    position: absolute;
+width: 150px;
+height: 400px;
+}
+
+.container__Submenu:hover .submenu{
+    display: block;
+}
+
+.submenu li p{
+    color: white;
+    line-height: 44px;
+}
+
+.submenu a:hover p{
+    color: black;
+}
+.submenu li:hover{
+    background-color: #c44141;
+
+}
 
 #menu .nav{
     width: 100%;
@@ -155,12 +200,13 @@ html{
     margin-left: -4px;
     line-height: var(--divide_header);
     text-transform: uppercase;
-    padding: 0px 28px;
     white-space: -4px;
-    border-radius: 5px;
 }
 
 #menu .nav li a{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
     text-decoration: none;
     color: black;
 }
