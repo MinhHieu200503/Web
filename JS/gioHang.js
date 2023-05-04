@@ -76,6 +76,15 @@ let getLocalstorege = function(){
 
 getLocalstorege();
 
+//function count item in shoppin-cart
+
+let countItemInCart = document.querySelector('.count_product');
+// var count = localStorage.length;
+let updateCountShopping = () => countItemInCart.innerHTML = JSON.parse(localStorage.getItem('ShoppingCart')).name.length;
+
+
+updateCountShopping();
+
 // remove item into trash
 let trash = document.getElementsByClassName('trash_icon');
 
@@ -85,6 +94,8 @@ let removeItem = function(e){
     if(trash[i] === target) return i;
   }
 }
+
+
 
 table_shopping.addEventListener('click',function(e){
    let index = removeItem(e);
@@ -114,6 +125,7 @@ table_shopping.addEventListener('click',function(e){
     getLocalstorege();
     localStoragePrice();
    }
+   updateCountShopping();
 
 })
 

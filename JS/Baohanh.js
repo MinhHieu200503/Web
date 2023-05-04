@@ -87,3 +87,11 @@
          }
     
 
+//function count item in shoppin-cart
+
+let countItemInCart = document.querySelector('.count_product');
+// var count = localStorage.length;
+let updateCountShopping = () => countItemInCart.innerHTML = JSON.parse(localStorage.getItem('ShoppingCart')).name.length;
+
+
+updateCountShopping();
